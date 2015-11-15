@@ -1,0 +1,115 @@
+{% extends "base_templates/services_base.html" %}
+{% block css %}
+	<link rel="stylesheet" href="{{url_for('static',filename='services/css/aide.css')}}">
+{% endblock %}
+
+{% block main_body %}
+	<h1>Home Health Aide</h1>
+	<div class="jumbotron">
+		<div class="container">
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<p>
+				The Home Health Aides (HHA) provides personal care and related services to patients in their home. They function under the direction, instruction and supervision of a Registered Nurse, the Direction of Nursing or Designee and/or appropriate supervisor like a Physical Therapist (PT). Our HHAs have successfully completed a state-established competency evaluation also known as a state licensure program.
+			</p>
+			<p>
+			After a RN or PT prepares a written Plan of Care (POC) the HHA works closely with the patients providing the following services:
+			</p>
+			<ul>
+				<li>Bathing (Bed bath, shower, shower chair, tub)</li>
+				<li>grooming (oral care, comb hair, shampoo, skin care, shave, nail care except diabetics, perineal care-Catheter care</li>
+				<li>vital signs (temperature, pulse rate, respiration rate, blood pressure)</li>
+				<li>Activities of Daily Living
+					<ol>
+						<li>Assist with transfers (Hoyer lift, wheel chair)</li>
+						<li>Assist with ambulation (walker, cane, crutches)</li>
+						<li>Assist with dressing or dress the patient</li>
+						<li>Make or change bed</li>
+						<li>Tidy area</li>
+					</ol>
+				</li>
+				<li>Knowledge of Agency established parameters and various reportable conditions</li>
+				<li>Miscellaneous Duties
+					<ol>
+						<li>laundry</li>
+						<li>grocery</li>
+						<li>medication pick-ups</li>
+						<li>light house keeping</li>
+					</ol>
+				</li>
+			</ul>
+			<p>
+				A home health aide service alone without an appropriate and medically necessary skilled nursing care may not be provided under the Medicare Coverage Guidelines for Home Health Agencies.
+			</p>
+		</div>
+	</div>
+	
+
+	{% block scripts %}
+		{{super()}}
+	{% endblock %}
+
+{% endblock %}
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/

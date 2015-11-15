@@ -1,0 +1,40 @@
+{% extends "base_templates/services_base.html" %}
+{% block css %}<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='services/css/speech_therapy.css')}}"> {% endblock %}
+
+{% block main_body %}
+	<h1>Speech Therapy</h1>
+
+	<div class="jumbotron">
+		<div class="container">
+			
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-6">
+			<p>
+				he speech therapist (ST) otherwise known as a speech language pathologist /audiologist is a qualified professional who directs, supervises, evaluates and provides treatment for the deficits and difficulties noted during the initial assessment. The speech Therapist provides skilled speech pathology services to patients on an intermittent basis in their homes.
+			</p>
+			<p>
+				In accordance with the physician's order, a ST help patients with the following medical problems:
+			</p>
+			<ol>
+				<li>Dysphagia - difficulty in swallowing</li>
+				<li>Dysarthria - difficulty in articulating words or slurred </li>
+				<li>Dysphasia - loss or impairment of the power to use or comprehend words</li>
+				<li>Apraxia - a disturbance of speech resulting from impairment of the ability to 
+			     program commands for the positioning and movement of muscles for the
+			     voluntary production of speech in the absence of muscle weakness.</li>
+			</ol>
+			<p>
+				The goal of a speech therapist is to provide the patient with skills necessary to communicate effectively in his or her environment.
+			</p>
+		</div>
+	</div>
+	
+	{% block scripts %}
+		{{super()}}
+	{% endblock %}
+
+{% endblock %}

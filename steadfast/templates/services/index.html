@@ -1,0 +1,54 @@
+{% extends "base_templates/services_base.html" %}
+
+{% block css %} 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='services/css/services_index.css')}}">
+{% endblock %}
+
+{% block main_body %}
+	<div class="row body">
+		<div class="col-md-4">
+			<i class="fa fa-user-md"></i>
+				<h3>Skilled Nursing</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula dui eget diam laoreet, nec egestas lorem congue. Aliquam vel risus metus. Mauris a gravida est, quis imperdiet dui. Aenean vitae magna eu massa tincidunt varius sit amet sed felis.</p>
+				<a href="{{url_for('services.Nursing')}}" class="btn btn-info">learn more</a>
+		</div>
+		<div class="col-md-4">
+			<i class="fa fa-heartbeat"></i>
+				<h3>Physical Therapy</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula dui eget diam laoreet, nec egestas lorem congue. Aliquam vel risus metus. Mauris a gravida est, quis imperdiet dui. Aenean vitae magna eu massa tincidunt varius sit amet sed felis.</p>
+				<a href="{{url_for('services.Pt')}}" class="btn btn-info">learn more</a>
+		</div>
+		<div class="col-md-4">
+			<i class="fa fa-hospital-o"></i>
+				<h3>Occupational Therapy</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula dui eget diam laoreet, nec egestas lorem congue. Aliquam vel risus metus. Mauris a gravida est, quis imperdiet dui. Aenean vitae magna eu massa tincidunt varius sit amet sed felis.</p>
+				<a href="{{url_for('services.Ot')}}" class="btn btn-info">learn more</a>
+		</div>
+	</div>
+	<div class="row body">
+		<div class="col-md-4">
+			<i class="fa fa-heartbeat"></i>
+				<h3>Speech Therapy</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula dui eget diam laoreet, nec egestas lorem congue. Aliquam vel risus metus. Mauris a gravida est, quis imperdiet dui. Aenean vitae magna eu massa tincidunt varius sit amet sed felis.</p>
+				<a href="{{url_for('services.Speech')}}" class="btn btn-info">learn more</a>
+		</div>
+		<div class="col-md-4">
+			<i class="fa fa-wheelchair"></i>
+				<h3>Social Work</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula dui eget diam laoreet, nec egestas lorem congue. Aliquam vel risus metus. Mauris a gravida est, quis imperdiet dui. Aenean vitae magna eu massa tincidunt varius sit amet sed felis.</p>
+				<a href="{{url_for('services.Social')}}" class="btn btn-info">learn more</a>
+		</div>
+		<div class="col-md-4">
+			<i class="fa fa-plus-square"></i>
+				<h3>Home Health Aide</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula dui eget diam laoreet, nec egestas lorem congue. Aliquam vel risus metus. Mauris a gravida est, quis imperdiet dui. Aenean vitae magna eu massa tincidunt varius sit amet sed felis.</p>
+				<a href="{{url_for('services.Aide')}}" class="btn btn-info">learn more</a>
+		</div>
+	</div>
+
+	{% block scripts %}
+	{{super()}}
+	{% endblock %}
+
+{% endblock %}

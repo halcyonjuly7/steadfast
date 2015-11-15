@@ -1,0 +1,19 @@
+{% extends "base_templates/careers_base.html" %}
+
+
+
+{% block css %}<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='careers/css/job.css')}}"> {% endblock %}
+
+{% block main_body %}
+
+	<h1>{{job["title"]}}</h1>
+	<p>{{job["body"]| safe}}</p>
+
+	{% block scripts %}
+
+		{{super()}}
+
+	{% endblock %}
+
+{% endblock %}
+

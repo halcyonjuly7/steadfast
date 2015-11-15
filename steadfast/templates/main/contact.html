@@ -1,0 +1,60 @@
+
+{% extends "base_templates/main_base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main/css/contact.css')}}">
+{% endblock %}
+
+{% block main_body %}
+<h1>Contact Us</h1>
+	<div class="row">
+		<div class="col-md-6">
+			<form action="" method="POST" role="form">
+				<div class="form-group">
+					<label for=""><i class="fa fa-user"></i>  Full Name</label>
+					<input type="text" class="form-control" name="full_name" placeholder="Full Name">
+				</div>
+				<div class="form-group">
+					<label for=""><i class="fa fa-envelope"></i>  Email</label>
+					<input type="text" class="form-control" name="email" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label for=""><i class="fa fa-question"></i>  Subject</label>
+					<input type="text" class="form-control" name="subject" placeholder="Subject">
+				</div>
+				<div class="form-group">
+					<label for=""><i class="fa fa-pencil"></i>  Message</label>
+					<textarea name="message" id="input" class="form-control" rows="14" required="required"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-6">
+			<div class="jumbotron" id ="map">
+				<script type="text/javascript">
+					var map;
+					function initMap() {
+						  // Create a map object and specify the DOM element for display.
+						var map = new google.maps.Map(document.getElementById('map'), {
+						    center: {lat: 29.672627, lng: -95.644492},
+						    scrollwheel: false,
+						    zoom: 17 });
+
+						var marker = new google.maps.Marker({
+							position:{lat: 29.672627, lng: -95.644492},
+							map: map,
+							title: 'Chute Boxe Houston'
+							});
+						}
+				</script>
+			</div>
+		</div>
+	</div>
+	
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD3f01TH8VNzbJ1xgiRtq3ZtFu8WuV-rM4&callback=initMap"></script> 
+{% endblock %}

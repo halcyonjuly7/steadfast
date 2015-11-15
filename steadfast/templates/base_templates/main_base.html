@@ -1,0 +1,114 @@
+
+<!Doctype html>
+<html>
+	<head>
+	    <title></title>
+	    <meta charset='utf-8'>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	    {% block css %}{% endblock %} 
+    </head>
+    <body>
+   		<div class="container">
+	    	<div class="navbar navbar-default">
+	    		<div class="navbar-header">
+		    		<a class="navbar-brand" href="{{url_for('main.Index')}}">Steadfast</a>
+		    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        		<span class="icon-bar"></span>
+		        		<span class="icon-bar"></span>
+		        		<span class="icon-bar"></span> 
+	      			</button>
+      			</div>
+      			<div class="collapse navbar-collapse" id="myNavbar">
+		    		<ul class="nav navbar-nav navbar-right">
+		    			<li class="" id="home">
+		    				<a href="{{url_for('main.Index')}}">Home</a>
+		    			</li>
+		    			<li class="" id="services">
+		    				<a href="{{url_for('services.Index')}}" class="dropdown-toggle disabled"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Services
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="{{url_for('services.Nursing')}}">Skilled Nursing</a></li>
+								<li><a href="{{url_for('services.Pt')}}">Physical Therapy</a></li>
+								<li><a href="{{url_for('services.Ot')}}">Occupational Therapy</a></li>
+								<li><a href="{{url_for('services.Speech')}}">Speech Therapy</a></li>
+								<li><a href="{{url_for('services.Social')}}">Social Work</a></li>
+								<li><a href="{{url_for('services.Aide')}}">Home Health Aide</a></li>
+							</ul>
+		    			</li>
+		    			<li class="" id="area">
+		    				<a href="{{url_for('main.Area')}}">Coverage Area</a>
+		    			</li>
+		    			<li class="" id="about">
+		    				<a href="{{url_for('main.About')}}">About Us</a>
+		    			</li>
+		    			<li class="" id="careers">
+		    				<a href="{{url_for('careers.Index')}}">Careers</a>
+		    			</li>
+		    			<li class="" id="contact">
+		    				<a href="{{url_for('main.Contact')}}">Contact Us</a>
+		    			</li>
+		    			<li class="" id="gallery">
+		    				<a href="{{url_for('main.Gallery')}}">Gallery</a>
+		    			</li>
+		    		</ul>
+		    	</div>
+	    	</div>
+
+	    
+	    {% block main_body %} {% endblock %}
+	    {% block footer %} 
+	    
+			
+	    		<footer>
+	    			<div class="container">
+	    				<div class="row">
+	    					<div class="col-md-4">
+				    			<ul class="footer-nav">
+				    				<li>Helpful links</li>
+				    				<li><a class="footer-nav-links" href="{{url_for('main.Index')}}">Home</a></li>
+				    				<li><a class="footer-nav-links" href="{{url_for('main.Area')}}">Coverage Area</a></li>
+				    				<li><a class="footer-nav-links" href="{{url_for('careers.Index')}}">Careers</a></li>
+				    				<li><a class="footer-nav-links" href="{{url_for('main.Contact')}}">Contact Us</a></li>
+				    				<li><a class="footer-nav-links" href="{{url_for('main.Gallery')}}">Gallery</a></li>
+				    			</ul>
+		    				</div>
+			    			<div class="col-md-4">
+			    				<ul class="footer-services">
+			    					<li>Services offered</li>
+				    				<li><a class="footer-services-links" href="{{url_for('services.Nursing')}}">Skilled Nursing</a></li>
+									<li><a class="footer-services-links" href="{{url_for('services.Pt')}}">Physical Therapy</a></li>
+									<li><a class="footer-services-links" href="{{url_for('services.Ot')}}">Occupational Therapy</a></li>
+									<li><a class="footer-services-links" href="{{url_for('services.Speech')}}">Speech Therapy</a></li>
+									<li><a class="footer-services-links" href="{{url_for('services.Social')}}">Social Work</a></li>
+									<li><a class="footer-services-links" href="{{url_for('services.Aide')}}">Home Health Aide</a></li>
+			    				</ul>
+				    			
+			    			</div>
+				    		<div class="col-md-4">
+				    			<ul class="contact">
+				    				<li>Contact Us</li>
+				    				<li>9894 Bissonet Street, Suite 580</li>
+				    				<li>steadfast@gmail.com</li>
+				    				<li>281-265-0337</li>
+				    			</ul>
+				    				
+				    		</div>	
+	    				</div>
+	    			</div>
+	    		</footer>
+		    
+
+
+	    {% endblock %}
+
+
+	    </div>
+	    {% block scripts %}
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	    	<script type="text/javascript" src="{{url_for('static', filename='main/scripts/main.js')}}"></script>
+    	{% endblock %}
+    </body>
+</html>
+

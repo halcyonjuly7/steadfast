@@ -1,0 +1,46 @@
+.jumbotron {
+	background-image: url("../img/social_worker.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+#services:hover .dropdown-menu {
+   display: block !important;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	margin-top: 60px;
+	background-color: #3b3b3b;
+}
+
+footer ul li {
+	color: #aaaa91;
+}
+
+footer ul {
+	padding-top: 30px;
+}
+
+.contact, .footer-nav, .footer-services {
+	list-style: none;
+}
+
+.footer-nav-links, .footer-services-links {
+	color: #aaaa91 !important;
+}
+
+.footer-nav-links:hover, .footer-services-links:hover {
+	color: white !important;
+}
+
+
+
+
+.contact li:first-child, .footer-nav li:first-child, .footer-services li:first-child {
+	color: white;
+	padding-bottom: 20px;
+	font-size: 20px;
+}

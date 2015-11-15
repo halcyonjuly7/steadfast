@@ -1,0 +1,43 @@
+{% extends "base_templates/services_base.html" %}
+{% block css %}
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='services/css/occupational_therapy.css')}}"> 
+{% endblock %}
+
+{% block main_body %}
+
+	<h1>Occupational Therapy</h1>
+	<div class="jumbotron">
+		<div class="container">
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<p>
+				Our occupational therapist work closely with our patient's physician and  assist patients in developing maximum self-care activities directed toward the return of a former function such as
+			</p>
+			<ul>
+				<li>dressing</li>
+				<li>eating </li>
+				<li>toileting</li>
+				<li>bathing</li>	
+			</ul>                                        
+			<p>
+				The occupational therapist may formulate activities that will restore the patient's ability to perform Activities of Daily Living (ADL) and Independent Activities of Daily Living (IADL) like:
+			</p>
+			<ol>
+				<li>making adaptive eating utensils and dressing devices</li>
+				<li>fashioning home exercise programs designed to promote ADL retraining</li>
+				<li>activities that will develop and improve motor skills training</li>
+				<li>implementing a neuro-developmental sensory treatment and</li>
+				<li>Devising a perceptual motor training</li>
+			</ol>
+		</div>
+	</div>
+	
+
+	{% block scripts %}
+		{{super()}}
+	{% endblock %}
+            
+{% endblock %}

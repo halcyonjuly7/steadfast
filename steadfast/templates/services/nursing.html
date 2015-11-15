@@ -1,0 +1,50 @@
+{% extends "base_templates/services_base.html" %}
+{% block css %} 
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='services/css/nursing.css')}}">
+{% endblock %}
+
+{% block main_body %}
+	<h1>Skilled Nursing</h1>
+	<div class="jumbotron" id="main">
+		<div class="container">
+
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<p>
+				A patient may receive home health services if they are homebound as certified by a physician. A person is considered homebound when there is an underlying inability or if a person requires taxing effort to leave home. Our registered nurses (RNs) perform a comprehensive physical and psychosocial evaluation on their initial visit or Start of Care (SOC). During this visit, the RN reviews all the medications currently taken by the patient; look into the home environmental safety situation; determine the need for home health aide, physical therapy, occupational therapy, speech therapy and medical social work services; establish a wound care treatment, if applicable. A plan of care that is duly signed by the physician is then established and is periodically reviewed.  Our RNs are all graduates from an accredited school of nursing and licensed to practice professional nursing in the State of Texas.
+			</p>
+			<p>
+				Follow-up visits are then performed by a RN or Licensed Vocational Nurse (LVN). Our LVNs are graduates from an accredited School of Vocational or Practical Nursing and are licensed to practice vocational
+				nursing in the State of Texas.
+			</p>
+			<p>
+				Nursing care is delivered in accordance with the patient's plan of care including: monitoring of their overall
+				physical condition; health promotion and disease prevention; coordination of services; teaching and training activities; and provision of direct nursing care.
+
+				Our nurses provide the following services in the comfort of the patient's home:
+				<ul>
+					<li>Treatment and Injections (IM, SQ, ID)</li>
+					<li>Supervision of Medications</li>
+					<li>Dressing Changes</li>
+					<li>Wound Care/Wound Vac</li>
+					<li>Urinary Care (Foley Catheter, Condom Catheter, Straight Catheterization, Suprapubic Catheterization, etc.)</li>
+					<li>Ostomy Care (Colostomy, Jejunostomy, Ileostomy, Gastrostomy, Urostomy, 
+				        Tracheostomy, etc.)</li>
+					<li>Lab Specimens/Venipuncture</li>
+					<li>IV Therapy: Peripheral, Central, Port-A-Cath</li>
+					<li>Diabetic Management and Teachings</li>
+					<li>Care of the Terminally ill</li>
+					<li>Family/Patient Health Teachings</li>
+				</ul>	     
+			</p>
+		</div>
+	</div>
+	
+	{% block scripts %}
+		{{super()}}
+	{% endblock %}
+
+
+{% endblock %}

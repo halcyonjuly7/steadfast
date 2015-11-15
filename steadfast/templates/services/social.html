@@ -1,0 +1,44 @@
+{% extends "base_templates/services_base.html" %}
+{% block css %}<link rel="stylesheet" href="{{url_for('static',filename='services/css/social.css')}}"> {% endblock %}
+{% block main_body %}
+	<h1>Social Worker</h1>
+	<div class="jumbotron">
+		<div class="container">
+			
+		</div>
+	</div>
+	 <div class="row">
+	 	<div class="col-md-6">
+	 		<p>
+				The medical social worker (MSW) is a qualified professional who provides medical social services and deals with the social, emotional and economic status of patients in their homes. Along with the Registered Nurses or Therapists, a Medical Social Worker will work with the home health care team and can:
+			</p>
+			<ol>
+				<li>Counsel the patient and the family.</li>
+				<li>Assess and evaluate the patient, family member(s) and the home situation to identify significant socio-economic and psychosocial status including emotional factors thatwill affect the plan of treatment.</li>
+				<li>
+					Help patients utilize the resources of their families and refer to community resources such as:
+					<ul>
+						<li>Meals on Wheels</li>
+						<li>Non-emergency ambulance services</li>
+						<li>Special transportation services</li>
+						<li>Provider services</li>
+						<li> Medicare /Medicaid enrollment services</li>
+					</ul>
+				</li>
+				<li> Observe, record, and report the changes in the emotional and social factors that 
+			    affect the patient's illness, needs for care, responses to treatment and adjustments to 
+			    the care provided by the physicians and other members of the health care team.</li>
+				<li>Assist the patient with advance directives.</li>
+				<li>Assist in long-term care planning and /or placement to Assisted Living Facilities or     Nursing Homes.</li>
+			</ol>
+			<p>
+				Our medical social workers hold a masters degree from a school of social work approved by the council of social work education, have two (2) years experience with at least one (1) year of which was in a health care setting, a hospital, clinic, or rehabilitation center OR those who is in the process of acquiring certification from the Academy of Certified Social Workers.
+			</p>
+	 	</div>
+	 </div>
+	 
+	{% block scripts %}
+		{{super()}}
+	{% endblock %}
+
+{% endblock %}

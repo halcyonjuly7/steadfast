@@ -1,0 +1,36 @@
+{% extends "base_templates/main_base.html" %}
+
+{% block css %}<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='careers/css/careers_index.css')}}"> {% endblock %}
+
+
+{% block main_body %}
+	<div class="row">
+		<div class="col-md-6">
+			<form action="" method="POST" role="form">
+				<div class="form-group">
+					<label for="">Search</label>
+					<input type="text" name="search" class="form-control" id="" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+	
+
+
+	{% for job in all_jobs %}
+
+		<p><a href="{{url_for('careers.Job', job_id=job['_id'])}}">{{job['title']}}</a></p>
+
+
+	{% endfor %}
+
+
+
+
+{% endblock %}
+
+
+
+
+

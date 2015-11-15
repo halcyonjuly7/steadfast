@@ -1,0 +1,47 @@
+{% extends "base_templates/services_base.html" %}
+
+
+{% block css %}
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='services/css/physical_therapy.css')}}">
+{% endblock %}
+
+{% block main_body %}
+	<h1>Physical Therapy</h1>
+	<div class="jumbotron">
+		<div class="container">
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<p>	
+				Our physical therapist (PT) performs therapeutic exercises related to a specific loss of function and involves the utilization of adaptive equipment and aid in rehabilitation. The PT will assess the rehabilitation needs and potential  of the patient including the development or implementation of a PT home exercise program.
+			</p>
+			<p>
+				<b>An appropriate and medically necessary PT program may offer the following benefits:</b>
+				<ol>
+					<li>Increased flexibility</li>
+					<li>Muscle strengthening</li>
+					<li>Improved mobility</li>
+					<li>Reduction of pain</li> 
+					<li>Reduce the risk of falling</li>
+				</ol>
+			</p>
+			<b>PT services may include:</b>
+			<ol>
+				<li>Evaluation of equipment      needs and teachings for the      safe use of the equipment</li>
+				<li>Evaluation of gait,      ambulation and home safety</li>
+				<li>Mobility, gait, transfer and      prosthetic training</li>
+				<li>Post-operative rehabilitation      and education</li>
+				<li>herapeutic exercise</li>
+				<li>Weight-bearing exercise</li>
+				<li>Written home exercises</li>
+			</ol>
+			A physical therapy assistant (PTA), who is under the supervision of a PT, can perform follow-up treatments.			
+		</div>
+	</div>
+	{% block scripts %}
+		{{super()}}
+	{% endblock %}
+
+{% endblock %}

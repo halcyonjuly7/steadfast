@@ -1,0 +1,86 @@
+{% extends "base_templates/main_base.html" %}
+{% block css %} <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main/css/about.css')}}"> {% endblock %}
+
+{% block main_body %}
+
+<h1>History of Steadfast</h1>
+	<div class="row">
+		<div class="col-md-10">
+			<p>
+				The humble beginnings of Steadfast began on May of 2005 as a provider for home companion (sitter) services. A year later, in May of 2006, Steadfast applied for certification as a home health agency and was certified to participate in the Medicare program in August of 2007. After receiving its Provider Number, Steadfast went on full operation and maintained 10 patients that year. It has gradually increased its patient census through the years.
+			</p>
+			<p>
+				The very first office of Steadfast was located in the living room of Angeli R. Amper, RN, BSN at 8510 Chickamauga Lane, Houston TX 77083 who was then the Director of Nursing. Jobert R. Macas, PT, was the Administrator. On January 1, 2008, Steadfast transferred office to 9894 Bissonnet St., Suite 605, Houston, TX 77036. On June 12, 2008, Angeli Amper became the concurrent Administrator and Director of Nursing. Jobert Macas opted to become the Alternate Administrator. By February 11, 2011, Angeli R. Amper became the Administrator while Vincent S. Texon, RN, BSN, started working as Director of Nursing. Since November 1, 2013, Steadfast has then moved to its current location at 9894 Bissonnet St., Suite 580, Houston, TX 77036.
+			</p>
+			<p>
+				Patient referral sources comes direct from medical clinics, discharge planners, skilled nursing  facilities, hospitals, board and care facilities, assisted living facilities and family members.
+			</p>
+			<p>
+				Steadfast takes pride in the quality of care provided to its patients by its health care professionals and paraprofessionals. It also offers a 24-hour on-call nurse service that responds to any questions and assists patients and families with their needs. Additionally, it  provides skilled nursing, home health aides, physical therapy, occupational therapy, speech therapy and social work services.
+			</p>
+
+
+		<h1>Mission</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe ex nesciunt, quidem quis illo cupiditate, quod maxime. Tenetur, ex quos. Magnam quasi iure facere minus velit voluptate accusamus hic!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe ex nesciunt, quidem quis illo cupiditate, quod maxime. Tenetur, ex quos. Magnam quasi iure facere minus velit voluptate accusamus hic!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe ex nesciunt, quidem quis illo cupiditate, quod maxime. Tenetur, ex quos. Magnam quasi iure facere minus velit voluptate accusamus hic!
+			</p>
+
+		<h1>Vision</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe ex nesciunt, quidem quis illo cupiditate, quod maxime. Tenetur, ex quos. Magnam quasi iure facere minus velit voluptate accusamus hic!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe ex nesciunt, quidem quis illo cupiditate, quod maxime. Tenetur, ex quos. Magnam quasi iure facere minus velit voluptate accusamus hic!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe ex nesciunt, quidem quis illo cupiditate, quod maxime. Tenetur, ex quos. Magnam quasi iure facere minus velit voluptate accusamus hic!
+			</p>
+		</div>
+	</div>
+	
+
+<div id="team_wrapper">
+	<div id="team">
+		<h1>Our Team</h1>
+	</div>
+	<div id="text-wrap">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem unde esse quos reprehenderit, ipsa ab? Nihil illum nostrum obcaecati commodi asperiores ducimus iure, totam perspiciatis aliquam. Harum aut esse nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi porro cupiditate aut iusto esse vero obcaecati consequuntur, sunt iure nisi hic earum impedit accusantium quae consectetur, libero. Tempore, atque, voluptatum?</p>
+		
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="{{url_for('static', filename='main/img/person1.jpg')}}">
+				<p class="name"> John Doe</p>
+				<p class="title">CEO</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde recusandae dolore ratione, vero dolores libero nostrum ea labore architecto minus, sequi optio deserunt voluptates quod harum tempore minima quas aut.</p>
+				
+			</div>
+			<div class="col-md-3">
+				<img src="{{url_for('static', filename='main/img/person2.jpg')}}">
+				<p class="name"> Jean Doe</p>
+				<p class="title">President</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde recusandae dolore ratione, vero dolores libero nostrum ea labore architecto minus, sequi optio deserunt voluptates quod harum tempore minima quas aut.</p>
+				
+			</div>
+			<div class="col-md-3">
+				<img src="{{url_for('static', filename='main/img/person3.jpg')}}">
+				<p class="name"> Jack Doe</p>
+				<p class="title">HR Manager</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde recusandae dolore ratione, vero dolores libero nostrum ea labore architecto minus, sequi optio deserunt voluptates quod harum tempore minima quas aut.</p>
+				
+			</div>
+			<div class="col-md-3">
+				<img src="{{url_for('static', filename='main/img/person4.jpg')}}">
+				<p class="name">John Does</p>
+				<p class="title">Staff Coordinator</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde recusandae dolore ratione, vero dolores libero nostrum ea labore architecto minus, sequi optio deserunt voluptates quod harum tempore minima quas aut.</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+	{{super()}}
+{% endblock %}
